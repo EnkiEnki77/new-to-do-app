@@ -60,6 +60,8 @@ h1{
     outline: none;
     text-align: end;
     background: none;
+    font-size: larger;
+    font-family: 'Space Mono', monospace;
 }
 
 .right{
@@ -106,6 +108,8 @@ h1{
     color: white;
     cursor: pointer;
     font-family: 'Space Mono', monospace;
+    font-size: large;
+    font-weight: 500;
 }
 
 .row button:hover{
@@ -122,6 +126,7 @@ h1{
     text-align: center;
     cursor: pointer;
     font-family: 'Space Mono', monospace;
+    font-size: large;
 }
 
 /* .push{
@@ -268,28 +273,35 @@ p{
 
         .numpeep{
             position: relative;
-            transform: translateY(-15px);
+            transform: translateY(-15px) translateX(5px);
         }
 
         .tip{
             height: 220px;
             position: relative;
+            transform: translateX(5px);
            padding-bottom: 20px;
         }
 
         .row{
             display: grid;
             grid-template-columns: 2fr 2fr;
+            gap: 10px;
         }
 
         .row button{
-            width:80%;
+            width:85%;
             height: 45px;
+        }
+
+        .righ{
+            position: relative;
+            transform: translateX(-30px);
         }
 
 
         .row input{
-            width:80%;
+            width:85%;
             height: 45px;
         }
 
@@ -301,7 +313,7 @@ p{
 
         .bill{
             position: relative;
-            transform: translateY(10px);
+            transform: translateY(10px) translateX(5px);
         }
 
         .input-container{
