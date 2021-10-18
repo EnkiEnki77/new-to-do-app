@@ -16,24 +16,22 @@
     <img id="logo" src="./tip-calculator-app-main/images/logo.svg" alt="">
     <div class="container">
         <div class="left">
-            <div class="bill">
-                <p>Bill</p>
+            <div  class="bill" id="bill">
+                <p id="name">Bill</p>
                 <div class="input-container">
                     <img src="./tip-calculator-app-main/images/icon-dollar.svg" alt="bill dollar">
-                    <form action="">
-                        <input type="text" placeholder="0">
-                    </form>
+                        <input type="text" id="inp" placeholder="0">
                 </div>
             </div>
             <div class="tip">
                 <p>Select Tip %</p>
                     <div class="row ">
-                        <button class="top">5%</button>
-                        <button class="top righ">10%</button>
-                        <button class="mid">15%</button>
-                        <button class="mid righ">20%</button>
-                        <button class="bott">25%</button>
-                        <input class="bott righ" type="text" placeholder="Custom">
+                        <button id="five" class="top tip-butt">5%</button>
+                        <button id="ten" class="top righ tip-butt">10%</button>
+                        <button id="fifteen" class="mid tip-butt">15%</button>
+                        <button id="twenty" class="mid righ tip-butt">20%</button>
+                        <button id="twenty-five" class="bott tip-butt">25%</button>
+                        <input id="custom" class="bott righ tip-butt" type="text" placeholder="Custom">
                     </div>
                      
                         
@@ -41,11 +39,10 @@
             </div>
             <div class="numpeep">
                 <p>Number of People</p>
-               <div class="input-container">
+               <div class="input-container" >
                     <img src="./tip-calculator-app-main/images/icon-person.svg" alt="bill dollar">
-                    <form action="">
-                        <input type="text" placeholder="0">
-                    </form>
+                        <input  type="text" id="numberOfPeople" placeholder="0">
+                
                </div>
             </div>
         </div>
@@ -56,7 +53,7 @@
                         <p>Tip Amount</p>
                         <p class="pers">/ person</p>
                     </div>
-                    <h1>$4.27</h1>
+                    <h1 id="tip-amt">$0</h1>
                 </div>
                 
                 <div class="tip-tot">
@@ -64,15 +61,21 @@
                         <p> Total</p>
                         <p class="pers">/ person</p>
                    </div>
-                    <h1>$32.79</h1>
+                    <h1 id="tip-tot">$0</h1>
                 </div>
             </div>
             
-            <div class="res">
+            <div id="Res-butt" class="res">
                 <button>Reset</button>
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <label id="dark-mode" class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    <script src="script.js">
+    </script>
 </body>
 </html>
